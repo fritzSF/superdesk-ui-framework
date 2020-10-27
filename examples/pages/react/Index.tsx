@@ -34,6 +34,7 @@ import DropdownDoc from './Dropdowns';
 import TagInputDoc from './TagInputs';
 import ToastsDoc from './Toasts';
 import TagDoc from './Tags';
+import EmptyStateDoc from './EmptyStates';
 
 import * as Playgrounds from '../playgrounds/react-playgrounds/Index';
 
@@ -93,6 +94,14 @@ const pages = {
             },
             'sub-navigation': {
                 name: 'Sub navigation bar'
+            },
+        }
+    },
+    containerComponents: {
+        name: "Containers",
+        items: {
+            'empty-states': {
+                name: 'Empty states'
             },
         }
     },
@@ -171,6 +180,7 @@ class ReactDoc extends React.Component {
                         <Route path="/react/dropdowns" component={DropdownDoc} />
                         <Route path="/react/toast" component={ToastsDoc} />
                         <Route path="/react/tag-input" component={TagInputDoc} />
+                        <Route path="/react/empty-states" component={EmptyStateDoc} />
                         <Route path="/" component={ReactDefault} />
                     </Switch>
                 </main>
